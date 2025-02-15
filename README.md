@@ -9,8 +9,8 @@ This project enables real-time text recognition from an IP camera stream and use
 -Advanced Image Processing – Enhances image quality for improved OCR accuracy.<br>
 -Text Extraction with OCR – Recognizes text from images using EasyOCR.<br>
 -Automated Video Search – Uses the extracted text to search for relevant videos.<br>
--YouTube Video Playback – Automatically plays the top search result.<br>
-<br>
+-YouTube Video Playback – Automatically plays the top search result.
+<br><br>
 <b>Project Flow</b>
 <br>
 1. Capture Image from IP Camera<br>
@@ -29,15 +29,15 @@ To improve OCR accuracy, multiple image enhancement techniques are applied:
 -Otsu’s Thresholding: Converts the image to black-and-white, isolating the text from the background.<br>
 -Morphological Transformations: Cleans up unwanted artifacts using dilation and erosion techniques.<br>
 -Resizing: Enlarges the image to improve OCR readability.<br>
-At the end of this step, the image is clear, high-contrast, and noise-free, making it ideal for OCR.<br>
-<br>
+At the end of this step, the image is clear, high-contrast, and noise-free, making it ideal for OCR.
+<br><br>
 3. Extract Text using OCR<br>
 The enhanced image is now passed through EasyOCR, a deep learning-based Optical Character Recognition engine.<br>
-<br>
+<br><br>
 EasyOCR scans the image and detects regions containing text.<br>
 It extracts the text and returns a structured output containing the recognized words.<br>
-The extracted text is stored as a string.<br>
-<br>
+The extracted text is stored as a string.
+<br><br>
 4. Search for a Video on YouTube<br>
 Once the text is extracted, it is used as a search query to find relevant videos on YouTube.<br>
 This is done using Selenium, a web automation tool that:
@@ -45,8 +45,8 @@ This is done using Selenium, a web automation tool that:
 Opens YouTube in a web browser.<br>
 Locates the search bar and types in the extracted text.<br>
 Triggers the search by pressing Enter.<br>
-At this stage, YouTube displays a list of videos most relevant to the extracted text.<br>
-<br>
+At this stage, YouTube displays a list of videos most relevant to the extracted text.
+<br><br>
 5. Automate YouTube Playback<br>
 After retrieving search results, the script:
 <br><br>
@@ -77,13 +77,6 @@ The system will process an image, extract text, search for a related video, and 
 <br><br>
 <b>Conclusion</b>
 This project automates the entire process of extracting real-world text from an image and finding related content online in a fully hands-free manner. It mimics how a human would read something, search for related videos, and watch them using AI and automation. 
-
-
-
-
-
-
-
 
 
 
