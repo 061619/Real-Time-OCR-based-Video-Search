@@ -33,7 +33,7 @@ At the end of this step, the image is clear, high-contrast, and noise-free, maki
 <br>
 3. Extract Text using OCR<br>
 The enhanced image is now passed through EasyOCR, a deep learning-based Optical Character Recognition engine.<br>
-<br><br>
+<br>
 EasyOCR scans the image and detects regions containing text.<br>
 It extracts the text and returns a structured output containing the recognized words.<br>
 The extracted text is stored as a string.<br>
@@ -56,7 +56,7 @@ Clicks on the video to start playback automatically.<br>
 Result: The system plays the most relevant YouTube video based on the extracted text, completing the process seamlessly.
 <br><br>
 
-<b>Tech Stack</b>
+<b>Tech Stack</b><br>
 Python – Core programming language.<br>
 OpenCV – Capturing and processing images.<br>
 EasyOCR – Optical Character Recognition for text extraction.<br>
